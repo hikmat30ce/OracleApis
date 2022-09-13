@@ -1,81 +1,78 @@
 {
-    "type": "object",
-    "properties": {
-        "BankPartyId": {
-            "title": "Bank ID",
-            "type": "integer",
-            "description": "The unique identifier of the bank.",
-            "format": "int64",
-            "nullable": false,
-            "default": 1,
-            "x-hints": {
-                "precision": 18
-            }
-        },
-        "BankName": {
-            "title": "Bank Name",
-            "maxLength": 360,
-            "type": "string",
-            "description": "The name of the bank.",
-            "nullable": false,
-            "x-hints": {
-                "controlType": "edit"
-            }
-        },
-        "BankNumber": {
-            "title": "Bank Code",
-            "maxLength": 30,
-            "type": "string",
-            "description": "The code of the bank.",
-            "nullable": true
-        },
-        "Description": {
-            "title": "Description",
-            "maxLength": 2000,
-            "type": "string",
-            "description": "The description of the bank.",
-            "nullable": true
-        },
-        "CountryName": {
-            "maxLength": 80,
-            "type": "string",
-            "description": "The name of the country where the bank is located.",
-            "nullable": true,
-            "x-hints": {
-                "controlType": "choice"
-            }
-        },
-        "TaxRegistrationNumber": {
-            "title": "Tax Registration Number",
-            "maxLength": 50,
-            "type": "string",
-            "description": "The tax registration number of the bank.",
-            "nullable": true,
-            "x-hints": {
-                "controlType": "edit"
-            }
-        },
-        "BankPartyNumber": {
-            "title": "Bank Party Number",
-            "maxLength": 30,
-            "type": "string",
-            "description": "The unique party identification number of the bank record.",
-            "nullable": false,
-            "default": "1"
-        },
-        "BankNameAlt": {
-            "title": "Alternate Bank Name",
-            "maxLength": 360,
-            "type": "string",
-            "description": "The alternate name of the bank.",
-            "nullable": true
-        },
-        "TaxpayerIdNumber": {
-            "title": "Taxpayer ID",
-            "maxLength": 20,
-            "type": "string",
-            "description": "The taxpayer identifier number of the bank assigned by a tax authority.",
-            "nullable": true
+    "BankPartyId": {
+        "title": "Bank ID",
+        "type": "integer",
+        "description": "The unique identifier of the bank.",
+        "format": "int64",
+        "nullable": false,
+        "default": 1,
+        "x-hints": {
+            "precision": 18
         }
+    },
+    "BankName": {
+        "title": "Bank Name",
+        "maxLength": 360,
+        "type": "string",
+        "description": "The name of the bank.",
+        "nullable": false,
+        "x-hints": {
+            "controlType": "edit"
+        }
+    },
+    "BankNumber": {
+        "title": "Bank Code",
+        "maxLength": 30,
+        "type": "string",
+        "description": "The code of the bank.",
+        "nullable": true
+    },
+    "Description": {
+        "title": "Description",
+        "maxLength": 2000,
+        "type": "string",
+        "description": "The description of the bank.",
+        "nullable": true
+    },
+    "CountryName": {
+        "maxLength": 80,
+        "type": "string",
+        "description": "The name of the country where the bank is located.",
+        "nullable": true,
+        "x-hints": {
+            "controlType": "choice"
+        }
+    },
+    "TaxRegistrationNumber": {
+        "title": "Tax Registration Number",
+        "maxLength": 50,
+        "type": "string",
+        "description": "The tax registration number of the bank.",
+        "nullable": true,
+        "x-hints": {
+            "controlType": "edit"
+        }
+    },
+    "BankPartyNumber": {
+        "title": "Bank Party Number",
+        "maxLength": 30,
+        "type": "string",
+        "description": "The unique party identification number of the bank record.",
+        "nullable": false,
+        "default": "1"
+    },
+    "BankNameAlt": {
+        "title": "Alternate Bank Name",
+        "maxLength": 360,
+        "type": "string",
+        "description": "The alternate name of the bank.",
+        "nullable": true
+    },
+    "TaxpayerIdNumber": {
+        "title": "Taxpayer ID",
+        "maxLength": 20,
+        "type": "string",
+        "description": "The taxpayer identifier number of the bank assigned by a tax authority.",
+        "nullable": true
     }
 }
